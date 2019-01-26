@@ -1,3 +1,7 @@
+// まずは HTTPステータス 200 を返す
+http_response_code(200) ;
+echo '200 {}';
+
 $ch = curl_init("https://api.line.me/v2/bot/message/".$obj_id."/content");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
